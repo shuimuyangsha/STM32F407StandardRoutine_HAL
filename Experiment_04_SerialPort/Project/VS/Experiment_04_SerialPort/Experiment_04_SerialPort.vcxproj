@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|VisualGDB">
+      <Configuration>Debug</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|VisualGDB">
+      <Configuration>Release</Configuration>
+      <Platform>VisualGDB</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{8A772702-B63C-4264-940B-5EFB44357360}</ProjectGuid>
+    <BSP_ID>KEIL:Keil/STM32F4xx_DFP</BSP_ID>
+    <BSP_VERSION>2.6.0</BSP_VERSION>
+    <InPlaceBSPSubdir />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <MCUPropertyListFile>$(ProjectDir)mcu.props</MCUPropertyListFile>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <GNUConfigurationType>Debug</GNUConfigurationType>
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
+    <ToolchainVersion>5.x//r1</ToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ToolchainID>com.sysprogs.toolchains.nongnu.armcc</ToolchainID>
+    <ToolchainVersion>5.x//r1</ToolchainVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\OBJ;..\..\..\USER;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\KEY;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_HAL_DRIVER;STM32F407xx;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+      <Optimization>O0</Optimization>
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\CORE;..\..\..\OBJ;..\..\..\USER;..\..\..\SYSTEM\delay;..\..\..\SYSTEM\sys;..\..\..\SYSTEM\usart;..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc;..\..\..\HARDWARE\LED;..\..\..\HARDWARE\KEY;%(ClCompile.AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>USE_HAL_DRIVER;STM32F407xx;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions />
+      <CLanguageStandard />
+      <CPPLanguageStandard />
+    </ClCompile>
+    <Link>
+      <AdditionalLinkerInputs>%(Link.AdditionalLinkerInputs)</AdditionalLinkerInputs>
+      <AdditionalOptions />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\USER\main.c" />
+    <ClCompile Include="..\..\..\USER\stm32f4xx_it.c" />
+    <ClCompile Include="..\..\..\USER\system_stm32f4xx.c" />
+    <ClCompile Include="..\..\..\USER\stm32f4xx_hal_msp.c" />
+    <ClCompile Include="..\..\..\CORE\startup_stm32f407xx.s" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_usart.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c" />
+    <ClCompile Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c" />
+    <ClCompile Include="..\..\..\SYSTEM\delay\delay.c" />
+    <ClCompile Include="..\..\..\SYSTEM\sys\sys.c" />
+    <ClCompile Include="..\..\..\SYSTEM\usart\usart.c" />
+    <ClCompile Include="..\..\..\HARDWARE\LED\led.c" />
+    <ClCompile Include="..\..\..\HARDWARE\KEY\key.c" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_crc.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cryp.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cryp_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dac.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dac_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dcmi.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dcmi_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma2d.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dsi.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_eth.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hash.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hash_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_hcd.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2s.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2s_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_irda.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_iwdg.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_ltdc.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_ltdc_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_nand.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_nor.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pccard.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pcd_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rng.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sai.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sai_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sd.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sdram.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_smartcard.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sram.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_usart.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_wwdg.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_fmc.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_fsmc.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_sdmmc.h" />
+    <ClInclude Include="..\..\..\HALLIB\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_usb.h" />
+    <ClInclude Include="..\..\..\HARDWARE\KEY\key.h" />
+    <ClInclude Include="..\..\..\HARDWARE\LED\led.h" />
+    <ClInclude Include="..\..\..\SYSTEM\delay\delay.h" />
+    <ClInclude Include="..\..\..\SYSTEM\sys\sys.h" />
+    <ClInclude Include="..\..\..\SYSTEM\usart\usart.h" />
+    <ClInclude Include="..\..\..\USER\main.h" />
+    <ClInclude Include="..\..\..\USER\stm32f407xx.h" />
+    <ClInclude Include="..\..\..\USER\stm32f4xx.h" />
+    <ClInclude Include="..\..\..\USER\stm32f4xx_hal_conf.h" />
+    <ClInclude Include="..\..\..\USER\stm32f4xx_it.h" />
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\builtins_ia32.h" />
+    <ClInclude Include="C:\Program Files (x86)\Sysprogs\VisualGDB\gcc_compat.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xc.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f401xe.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f405xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f410cx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f410rx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f410tx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f415xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f417xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f427xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f429xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f437xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f439xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f446xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f469xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f479xx.h" />
+    <ClInclude Include="G:\MDK\ARM\PACK\Keil\STM32F4xx_DFP\2.6.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h" />
+    <None Include="mcu.props" />
+    <ClInclude Include="..\..\..\CORE\core_cm4.h" />
+    <ClInclude Include="..\..\..\CORE\cmsis_armcc.h" />
+    <ClInclude Include="..\..\..\CORE\core_cmFunc.h" />
+    <ClInclude Include="..\..\..\CORE\core_cmInstr.h" />
+    <ClInclude Include="..\..\..\CORE\core_cmSimd.h" />
+    <None Include="..\..\..\readme.txt" />
+    <ClInclude Include="$(BSP_ROOT)\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h" />
+    <None Include="Experiment_04_SerialPort-Debug.vgdbsettings" />
+    <None Include="Experiment_04_SerialPort-Release.vgdbsettings" />
+    <None Include="MCU.xml" />
+  </ItemGroup>
+</Project>

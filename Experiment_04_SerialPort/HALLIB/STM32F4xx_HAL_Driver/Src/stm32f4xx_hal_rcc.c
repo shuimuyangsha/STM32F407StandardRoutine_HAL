@@ -85,6 +85,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
+extern const uint8_t AHBPrescTable[16];
+extern const uint8_t APBPrescTable[8];
 
 /** @addtogroup STM32F4xx_HAL_Driver
   * @{

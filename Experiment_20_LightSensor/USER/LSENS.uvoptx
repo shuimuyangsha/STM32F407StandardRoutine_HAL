@@ -81,58 +81,38 @@
       <Books>
         <Book>
           <Number>0</Number>
-          <Title>STM32F4-Discovery Quick Start Guide (STM32F4-Discovery)</Title>
-          <Path>D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Documentation\32F4-DISCOVERY_QSG.pdf</Path>
+          <Title>探索者F4 视频盘(B盘) (STM32F407)</Title>
+          <Path>E:/嵌入式学习/资料/探索者F4/探索者F4 视频盘(B盘)</Path>
         </Book>
         <Book>
           <Number>1</Number>
-          <Title>MCBSTM32F400 Quick Start Guide (MCBSTM32F400)</Title>
-          <Path>D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Documentation\MCBSTM32F400_QSG.pdf</Path>
+          <Title>探索者F4 资料盘(A盘) (STM32F407)</Title>
+          <Path>E:/嵌入式学习/资料/探索者F4/探索者F4 资料盘(A盘)</Path>
         </Book>
         <Book>
           <Number>2</Number>
-          <Title>User Manual (MCBSTM32F400)</Title>
-          <Path>D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\MDK\Boards\Keil\MCBSTM32F400\Documentation\mcbstm32f200.chm</Path>
+          <Title>Explorer STM32F4_V2.2_SCH(原理图) (STM32F407)</Title>
+          <Path>E:/嵌入式学习/资料/探索者F4/探索者F4 资料盘(A盘)/3，ALIENTEK探索者STM32F4开发板原理图/Explorer STM32F4_V2.2_SCH.pdf</Path>
         </Book>
         <Book>
           <Number>3</Number>
-          <Title>Schematics (MCBSTM32F400)</Title>
-          <Path>D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\MDK\Boards\Keil\MCBSTM32F400\Documentation\mcbstm32f400-schematics.pdf</Path>
+          <Title>STM32F4开发指南-库函数版本_V1.1 (STM32F407)</Title>
+          <Path>E:/嵌入式学习/资料/探索者F4/探索者F4 资料盘(A盘)/STM32F4开发指南-库函数版本_V1.1.pdf</Path>
         </Book>
         <Book>
           <Number>4</Number>
-          <Title>Getting Started (STM32F4-Discovery)</Title>
-          <Path>D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\MDK\Boards\ST\STM32F4-Discovery\Documentation\DM00037368.pdf</Path>
+          <Title>代码分析 (STM32F407)</Title>
+          <Path>E:/嵌入式学习/资料/野火STM32/1-F429至尊版/A盘（资料盘）/3-程序源码/代码分析</Path>
         </Book>
         <Book>
           <Number>5</Number>
-          <Title>User Manual (STM32F4-Discovery)</Title>
-          <Path>D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\MDK\Boards\ST\STM32F4-Discovery\Documentation\DM00039084.pdf</Path>
+          <Title>1-STM32F4xx中文参考手册1 (STM32F407)</Title>
+          <Path>E:/嵌入式学习/资料/野火STM32/1-F429至尊版/A盘（资料盘）/6-STM32官方手册/1-STM32F4xx中文参考手册1.pdf</Path>
         </Book>
         <Book>
           <Number>6</Number>
-          <Title>Bill of Materials (STM32F4-Discovery)</Title>
-          <Path>D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\MDK\Boards\ST\STM32F4-Discovery\Documentation\stm32f4discovery_bom.zip</Path>
-        </Book>
-        <Book>
-          <Number>7</Number>
-          <Title>Gerber Files (STM32F4-Discovery)</Title>
-          <Path>D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\MDK\Boards\ST\STM32F4-Discovery\Documentation\stm32f4discovery_gerber.zip</Path>
-        </Book>
-        <Book>
-          <Number>8</Number>
-          <Title>Schematics (STM32F4-Discovery)</Title>
-          <Path>D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\MDK\Boards\ST\STM32F4-Discovery\Documentation\stm32f4discovery_sch.zip</Path>
-        </Book>
-        <Book>
-          <Number>9</Number>
-          <Title>MCBSTM32F400 Evaluation Board Web Page (MCBSTM32F400)</Title>
-          <Path>http://www.keil.com/mcbstm32f400/</Path>
-        </Book>
-        <Book>
-          <Number>10</Number>
-          <Title>STM32F4-Discovery Web Page (STM32F4-Discovery)</Title>
-          <Path>http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1199/PF252419</Path>
+          <Title>2-STM32F4xx中文数据手册 (STM32F407)</Title>
+          <Path>E:/嵌入式学习/资料/野火STM32/1-F429至尊版/A盘（资料盘）/6-STM32官方手册/2-STM32F4xx中文数据手册.PDF</Path>
         </Book>
       </Books>
       <DebugOpt>

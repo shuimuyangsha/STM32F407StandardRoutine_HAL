@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_04_SerialPort", "Experiment_04_SerialPort\Project\VS\Experiment_04_SerialPort\Experiment_04_SerialPort.vcxproj", "{8A772702-B63C-4264-940B-5EFB44357360}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_09_PWMOutput", "Experiment_09_PWMOutput\Project\VS\Experiment_09_PWMOutput\Experiment_09_PWMOutput.vcxproj", "{F2F9F837-1906-49AA-A35C-28D8B91FF8C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{41EC6B0D-7B48-4F2D-A770-231FE2B53965}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\3，ALIENTEK探索者STM32F4开发板原理图\Explorer STM32F4_V2.2_SCH.pdf = ..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\3，ALIENTEK探索者STM32F4开发板原理图\Explorer STM32F4_V2.2_SCH.pdf
+		..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\STM32F4开发指南-库函数版本_V1.1.pdf = ..\..\..\嵌入式学习\资料\探索者F4\探索者F4 资料盘(A盘)\STM32F4开发指南-库函数版本_V1.1.pdf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -15,6 +23,10 @@ Global
 		{8A772702-B63C-4264-940B-5EFB44357360}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{8A772702-B63C-4264-940B-5EFB44357360}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{8A772702-B63C-4264-940B-5EFB44357360}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{F2F9F837-1906-49AA-A35C-28D8B91FF8C7}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{F2F9F837-1906-49AA-A35C-28D8B91FF8C7}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{F2F9F837-1906-49AA-A35C-28D8B91FF8C7}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{F2F9F837-1906-49AA-A35C-28D8B91FF8C7}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

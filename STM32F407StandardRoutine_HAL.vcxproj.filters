@@ -40,4 +40,9 @@
       <Filter>VisualGDB settings</Filter>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="源.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>

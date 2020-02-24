@@ -30,7 +30,7 @@ int main(void)
 	delay_init(168);               	//初始化延时函数
 	uart_init(115200);             	//初始化USART
 	usmart_dev.init(84); 		    //初始化USMART
-	LED_Init();						//初始化LED	
+	LED_Init();						//初始化LED
 	KEY_Init();						//初始化KEY
  	LCD_Init();           			//初始化LCD
 	

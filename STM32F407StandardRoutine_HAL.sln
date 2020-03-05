@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_27_CAN_ControllerAreaNetwork", "Experiment_27_CAN_ControllerAreaNetwork\Project\VS\Experiment_27_CAN_ControllerAreaNetwork\Experiment_27_CAN_ControllerAreaNetwork.vcxproj", "{625A69EE-1258-46DB-9530-D3D9610D8DED}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Experiment_08_TimerInterrupts", "Experiment_08_TimerInterrupts\Project\VS\Experiment_08_TimerInterrupts\Experiment_08_TimerInterrupts.vcxproj", "{0BD522F6-8278-41BB-94E1-9503EDBC6FA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|VisualGDB = Debug|VisualGDB
@@ -33,6 +35,10 @@ Global
 		{625A69EE-1258-46DB-9530-D3D9610D8DED}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
 		{625A69EE-1258-46DB-9530-D3D9610D8DED}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
 		{625A69EE-1258-46DB-9530-D3D9610D8DED}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{0BD522F6-8278-41BB-94E1-9503EDBC6FA1}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{0BD522F6-8278-41BB-94E1-9503EDBC6FA1}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{0BD522F6-8278-41BB-94E1-9503EDBC6FA1}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{0BD522F6-8278-41BB-94E1-9503EDBC6FA1}.Release|VisualGDB.Build.0 = Release|VisualGDB
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
